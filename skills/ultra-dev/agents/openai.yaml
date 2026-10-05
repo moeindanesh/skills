@@ -1,4 +1,4 @@
 interface:
   display_name: "Ultra Dev"
   short_description: "Astra Ultra plans; Sol 6.1 Ultra implements"
-  default_prompt: "Use $ultra-dev to plan this task with Astra Ultra and carry out authorized implementation with Sol 6.1 Ultra."
+  default_prompt: "Use $ultra-dev to plan this task with Astra Ultra, implement and verify with Sol 6.1 Ultra, review with Astra Ultra, and complete any accepted repairs and reverification with Sol 6.1 Ultra."

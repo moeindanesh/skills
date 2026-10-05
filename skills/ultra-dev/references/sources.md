@@ -1,6 +1,6 @@
 # Provenance and adaptations
 
-This skill adapts orchestration methods studied in [Matt Pocock's skills repository](https://github.com/mattpocock/skills) at commit `f6abdeb8dd2a9be64f924ab44c7af374cb76726d`. Source instructions were studied as evidence, rather than executed. The Astra/Sol model map, the ultra-dev skill name, and the English instruction and UI text follow the user's requests.
+This skill adapts orchestration methods studied in [Matt Pocock's skills repository](https://github.com/mattpocock/skills) at commit `f6abdeb8dd2a9be64f924ab44c7af374cb76726d`. Source instructions were studied as evidence, rather than executed. The Astra/Sol model map, the ultra-dev skill name, the default plan/execute/review lifecycle, and the English instruction and UI text follow the user's requests.
 
 Read this file only for provenance or adaptation rationale. The installed skill is self-contained and does not require installing upstream skills, configuring a tracker, or changing global model settings.
 

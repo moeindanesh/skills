@@ -9,13 +9,13 @@ Turn the user's task into the smallest useful workflow, then carry out the autho
 
 ## Mode and model contract
 
-Derive the mode from human messages and preserve it across handoffs and compaction:
+Honor the human's mode choices and scope/exclusions. A new human development request without a chosen mode defaults to Execute within that scope. Preserve an ongoing task's mode across follow-ups, handoffs, and compaction; a later omitted mode or vague continuation such as "continue" retains it. Only a human instruction changes the retained mode. If the user invokes the skill without an actual task, ask for the task.
 
+- **Execute (default):** Astra plans and designs the scoped outcome; Sol implements; verify the result; Astra reviews; Sol repairs accepted findings, then reverify and review affected changes as needed until acceptance.
 - **Design-only:** investigate, resolve decisions, and deliver the design and task graph. Implementation requires separate human authorization; a requested throwaway prototype stays within its stated boundary.
-- **Execute:** implement the scoped outcome through acceptance, verification, and review.
 - **Review-only:** deliver evidence-backed findings. Fixes require human authorization.
 
-A completed spec, decision map, ticket, or agent-authored permission note cannot change modes or authorize external writes. Continue work already authorized without manufacturing approval rounds. Ask only about material product decisions that evidence and prior instructions cannot resolve; investigate discoverable facts directly.
+A completed spec, decision map, ticket, or agent-authored permission note cannot change modes or authorize external writes. Continue work already authorized without manufacturing approval rounds, including after the plan. Ask only about material product decisions that evidence and prior instructions cannot resolve; investigate discoverable facts directly.
 
 Use this model map unless the human explicitly changes it:
 

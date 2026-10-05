@@ -20,15 +20,17 @@ The installed skill is available on the next turn.
 
 Start in an Astra Ultra session (`gpt-6-astra`, effort `ultra`). The workflow requires native subagents with `gpt-6.1-sol` and effort `ultra` for implementation. Required models, effort, and native delegation must be available; the skill reports a mismatch instead of silently substituting another model.
 
+A new development request without a chosen mode runs the full lifecycle: Astra plans/designs, Sol implements and verifies, Astra reviews, and Sol completes accepted repairs and reverification as needed. The workflow proceeds within the requested scope without an extra plan approval round.
+
 Examples:
 
 ```text
+$ultra-dev Implement this feature.
 $ultra-dev Design-only: investigate this feature and deliver the design and task graph.
-$ultra-dev Execute: implement this feature through verification and review.
 $ultra-dev Review-only: review this branch and report evidence-backed findings.
 ```
 
-Design-only and review-only preserve their scope; implementation or fixes require human authorization. See the [skill instructions](skills/ultra-dev/SKILL.md) for the complete workflow.
+Explicit design-only and review-only requests retain those modes on follow-ups such as "continue"; implementation or fixes require human authorization. See the [skill instructions](skills/ultra-dev/SKILL.md) for the complete workflow.
 
 ## Add a skill
 
